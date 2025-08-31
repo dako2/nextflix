@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Loader2, Film, Image as ImageIcon } from 'lucide-react'
 
-const API_BASE_URL = 'http://localhost:8000'
+const API_BASE_URL = 'https://app-iiwkaqrb.fly.dev'
 
 interface Scene {
   scene_number: string
