@@ -8,7 +8,8 @@ import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Loader2, Film, Image as ImageIcon } from 'lucide-react'
 
-const API_BASE_URL = 'https://app-iiwkaqrb.fly.dev'
+const API_BASE_URL = 'https://ai-movie-generator-tunnel-lqts4ror.devinapps.com'
+const API_AUTH = 'Basic ' + btoa('user:fba0e9b2a8f7b0fbd516d8599ef73cad')
 
 interface Scene {
   scene_number: string
@@ -46,6 +47,7 @@ function App() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': API_AUTH,
         },
         body: JSON.stringify({
           plot: plot.trim(),
